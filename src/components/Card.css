@@ -1,4 +1,9 @@
 .dropzone:hover {
   border: 5px dashed;
   border-color: black;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
 }
