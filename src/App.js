@@ -4,6 +4,7 @@ import Card from './components/Card';
 import SignIn from './components/SignIn'
 import Register from './components/Register'
 import Navigation from './components/Navigation'
+import DownloadPage from './components/DownloadPage';
 
 class App extends Component{
 
@@ -12,8 +13,18 @@ class App extends Component{
   
     this.state = {
        route: 'signin',
-       isSignedIn: false
+       isSignedIn: false,
+       currentUser: ''
     }
+  }
+
+  getCurrentUser = (user) => {
+
+    this.setState({
+      currentUser: user
+    })
+    
+
   }
 
   onRouteChange = (route) => {
@@ -37,12 +48,17 @@ class App extends Component{
         {this.state.route === 'home'
           ? <div>
             <Card />
+            <DownloadPage currentUser={this.state.currentUser}/>
           </div>
           :
           (
             (this.state.route === 'signin' || this.state.route === 'signout')
-            ? <SignIn onRouteChange={this.onRouteChange}/>
-            : <Register onRouteChange={this.onRouteChange}/>
+            ? <div>
+            <SignIn onRouteChange={this.onRouteChange} getCurrentUser={this.getCurrentUser}/>
+            </div>
+            :<div> 
+              <Register onRouteChange={this.onRouteChange}/>
+            </div>
           )
         }
       </div>

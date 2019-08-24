@@ -27,9 +27,13 @@ class Card extends Component{
 
     onClickHandler = () => {
         const data = new FormData();
+        data.set('to_person', this.state.sendTo)
         data.append('avatar', this.state.selectedFile)
 
-        axios.post('http://localhost:5049/files', data, {
+        console.log(this.state.sendTo)
+
+        axios.post('https://intense-spire-37729.herokuapp.com/files', data, {
+
             onUploadProgress: ProgressEvent => {
                 this.setState({
                     loaded: (ProgressEvent.loaded / ProgressEvent.total*100),

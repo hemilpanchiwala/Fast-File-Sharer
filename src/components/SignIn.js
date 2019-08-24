@@ -24,8 +24,10 @@ class SignIn extends Component{
     }
 
     onsubmitSignIn = () => {
+        
+        this.props.getCurrentUser(this.state.signInEmail)
 
-        fetch('http://localhost:5049/signin', {
+        fetch('https://intense-spire-37729.herokuapp.com/signin', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body : JSON.stringify({
@@ -70,11 +72,11 @@ class SignIn extends Component{
                         </div>
                     </fieldset>
                     <div className="">
-                        <input
-                            onClick={this.onsubmitSignIn}
-                            className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f5 dib"
-                            type="submit"
-                            value="LOGIN" />
+                            <input
+                                onClick={this.onsubmitSignIn}
+                                className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f5 dib"
+                                type="submit"
+                                value="LOGIN" />
                     </div>
                     <div className="lh-copy mt3">
                         <p onClick={() => onRouteChange('register')} className="f6 link dim black db pointer">Register</p>

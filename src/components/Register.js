@@ -31,7 +31,7 @@ class Register extends Component{
     }
 
     onsubmitRegister = () => {
-        fetch('http://localhost:5049/register', {
+        fetch('https://intense-spire-37729.herokuapp.com/register', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -41,7 +41,8 @@ class Register extends Component{
             })
         })
         .then(response => response.json())
-        this.props.onRouteChange('home')
+        .then(data => console.log(data))
+        this.props.onRouteChange('signin')
     }
 
   render() {
