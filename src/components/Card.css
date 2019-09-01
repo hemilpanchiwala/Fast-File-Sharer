@@ -4,6 +4,39 @@
   cursor: pointer;
 }
 
+.message {
+  border: none;
+}
+
+.sendTo {
+  border: none;
+  background-color:rgba(0, 0, 0, 0);
+  color: #000000;
+  outline:none;
+  height:30px;
+  transition:height 1s;
+  -webkit-transition:height 1s;
+}
+
+#sendTo:focus {
+  height:50px;
+  font-size:16px;
+}
+
+.dropzone {
+  background-color: #008CD6 ;
+}
+
 textarea {
   resize: vertical;
+}
+
+#sendto h3,
+#sendto input {
+  display: inline;
+}
+
+#message h3,
+#message textarea {
+  display: inline;
 }

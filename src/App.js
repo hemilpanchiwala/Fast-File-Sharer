@@ -36,8 +36,6 @@ class App extends Component{
       this.setState({isSignedIn: false})
     }
     this.setState({route: route})
-
-
   }
   
   render() {

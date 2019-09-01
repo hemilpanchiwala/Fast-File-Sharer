@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import 'tachyons'
 
 
 class DownloadPage extends Component {
@@ -69,12 +70,14 @@ class DownloadPage extends Component {
                 {
                     this.state.hasReceived
                     ? <div>
-                        <ul>
+                        <ul className='list pl0 ml0 center mw6 ba b--light-silver br2'>
+                            <div> 
                             {
                                 this.state.list.map(item => (
-                                    <li onClick = {() => this.help({item})}>{item}</li>
+                                    <li className='ph3 pv3 bb b--light-silver pointer tc grow' onClick = {() => this.help({item})}>{item}</li>
                                 ))
                             }
+                            </div>
                         </ul>
                     </div>
                     : <div>
