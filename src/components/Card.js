@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Dropzone from 'react-dropzone';
 import axios from 'axios';
 import 'filepond/dist/filepond.min.css';
-import {loadProgressBar} from 'axios-progress-bar'
+import {loadProgressBar} from 'axios-progress-bar';
 import './Card.css'
 import 'tachyons'
 import 'axios-progress-bar/dist/nprogress.css'
@@ -20,7 +20,8 @@ class Card extends Component{
             toPlaceholder: 'email',
             sendToInput: '',
             sendToMessage: '',
-            uploading: 'start'
+            uploading: 'start',
+            percentage: 0
         }
     }
     
@@ -49,9 +50,11 @@ class Card extends Component{
         axios.post('https://intense-spire-37729.herokuapp.com/files', data, {
 
             onUploadProgress: ProgressEvent => {
-                
+                let percentageUploaded = Math.round((ProgressEvent.loaded*100)/ProgressEvent.total)
+                console.log("Progress: "+percentageUploaded)
                 this.setState({
                     loaded: (ProgressEvent.loaded / ProgressEvent.total*100),
+                    percentage: percentageUploaded
                 })
             }
         })
@@ -79,7 +82,8 @@ class Card extends Component{
         })
     }
 
-    render() {                                                                                                                                                                                                                                                                                              
+    render() {              
+
         return(
             <div className="ma3 ba w-50 center shadow-5">
 
@@ -93,7 +97,7 @@ class Card extends Component{
                         {
                             this.state.uploading === 'uploading'?
                             <div>
-                                <h1>Uploading ...</h1>
+                                <h1>Uploading ... {this.state.percentage}%</h1>
                             </div>:
                             <div>
                                 <h1>Uploaded</h1>
