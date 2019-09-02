@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import Dropzone from 'react-dropzone';
 import axios from 'axios';
-import 'filepond/dist/filepond.min.css';
-import {loadProgressBar} from 'axios-progress-bar';
+import { Progress } from 'react-sweet-progress';
+import "react-sweet-progress/lib/style.css";
 import './Card.css'
 import 'tachyons'
-import 'axios-progress-bar/dist/nprogress.css'
+
 
 class Card extends Component{
 
@@ -85,19 +85,20 @@ class Card extends Component{
     render() {              
 
         return(
-            <div className="ma3 ba w-50 center shadow-5">
+            <div className="ma2 ba w-40 center shadow-5">
 
                {
                     this.state.uploading === 'start'?
                     <div>
-                        {loadProgressBar()}
+                        
                         <h1>Enter the file to upload</h1>
                     </div>:
                     <div>
                         {
                             this.state.uploading === 'uploading'?
                             <div>
-                                <h1>Uploading ... {this.state.percentage}%</h1>
+                                <h1>Uploading ...</h1>
+                                <Progress percent = {this.state.percentage} />
                             </div>:
                             <div>
                                 <h1>Uploaded</h1>

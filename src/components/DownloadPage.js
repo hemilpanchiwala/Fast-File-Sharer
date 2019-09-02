@@ -66,21 +66,21 @@ class DownloadPage extends Component {
                         onClick={this.onGetFilesRequest}
                         className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f5 dib"
                         type="submit"
-                        value="Get Files" />
+                        value="Download Files" />
                 {
                     this.state.hasReceived
-                    ? <div>
+                    ? <div className='mr2'>
                         <ul className='list pl0 ml0 center mw6 ba b--light-silver br2'>
-                            <div> 
+                            <div style={{overflow: 'auto', height: '450px', width: '500px'}}> 
                             {
-                                this.state.list.map(item => (
+                                this.state.list.reverse().map(item => (
                                     <li className='ph3 pv3 bb b--light-silver pointer tc grow' onClick = {() => this.help({item})}>{item}</li>
                                 ))
                             }
                             </div>
                         </ul>
                     </div>
-                    : <div>
+                    : <div className='mr15' style={{overflow: 'auto', height: '450px', width: '500px'}}>
                         <h1>NO FILES FOUND!!!</h1>
                     </div>
                 }

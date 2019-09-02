@@ -44,7 +44,7 @@ class App extends Component{
         <Navigation isSignedIn={this.state.isSignedIn} onRouteChange={this.onRouteChange}/>
 
         {this.state.route === 'home'
-          ? <div>
+          ? <div className='horizontal'>
             <Card />
             <DownloadPage currentUser={this.state.currentUser}/>
           </div>
