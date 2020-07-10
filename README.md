@@ -31,3 +31,6 @@ Login to the app using the credentials and just click on the `Download Files` bu
 If you encounter any problems feel free to open an issue. If you feel the library is  
 missing a feature, please raise a ticket on Github and I'll look into it.  
 Pull request are also welcome.
+
+# License
+Fast-File-Sharer is licensed under `MIT License`. View <a href="https://github.com/hemilpanchiwala/Fast-File-Sharer/blob/master/LICENSE">license</a>.
