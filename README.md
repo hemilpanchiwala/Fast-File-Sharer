@@ -1,12 +1,11 @@
 <div align="center">
 <h1> Fast-File-Sharer</h1>
 	<img src="https://img.shields.io/badge/Platform-React.js-green" alt="Platform" />
-	<a href="https://opensource.org/licenses/MIT">
 </div>
   
   <br />
 	
-Fast-Files-Sharer is a simple ReactJS based web application that allows users to share files quickly. It provides a simple interface to send the files to the another user by simply providing his/her registered email-id. It is currently hosted on Heroku with the link provided in the repository description. Its backend is built upon a NodeJS server with PostgreSQL as a database for storing files. Yet many of the more features can be implemented in this which can make it a far more better product than what it is currently.
+Fast-File-Sharer is a simple ReactJS based web application that allows users to share files quickly. It provides a simple interface to send the files to the another user by simply providing his/her registered email-id. It is currently hosted on Heroku with the link provided in the repository description. Its backend is built upon a NodeJS server with PostgreSQL as a database for storing files. Yet many of the more features can be implemented in this which can make it a far more better product than what it is currently.
 
 # Screenshots
 **HomePage**         
