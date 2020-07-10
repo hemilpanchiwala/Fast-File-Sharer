@@ -1,68 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+<h1> Fast-File-Sharer</h1>
+	<img src="https://img.shields.io/badge/Platform-React.js-green" alt="Platform" />
+	<a href="https://opensource.org/licenses/MIT">
+</div>
+  
+  <br />
+	
+Fast-Files-Sharer is a simple ReactJS based web application that allows users to share files quickly. It provides a simple interface to send the files to the another user by simply providing his/her registered email-id. It is currently hosted on Heroku with the link provided in the repository description. Its backend is built upon a NodeJS server with PostgreSQL as a database for storing files. Yet many of the more features can be implemented in this which can make it a far more better product than what it is currently.
 
-## Available Scripts
+# Screenshots
+**HomePage**         
+<img src="https://raw.githubusercontent.com/hemilpanchiwala/Fast-File-Sharer/master/screenshots/homepage.png" height=350/>
 
-In the project directory, you can run:
+Register             |  Sign In                
+:-------------------------:|:-------------------------:
+<img src="https://raw.githubusercontent.com/hemilpanchiwala/Fast-File-Sharer/master/screenshots/register.png" height=350/>  |  <img src="https://raw.githubusercontent.com/hemilpanchiwala/Fast-File-Sharer/master/screenshots/signin.png" height=350/> 
 
-### `npm start`
+Uploading Files             |  Received Files            
+:-------------------------:|:-------------------------:
+<img src="https://raw.githubusercontent.com/hemilpanchiwala/Fast-File-Sharer/master/screenshots/uploading.png" height=350/>  |  <img src="https://raw.githubusercontent.com/hemilpanchiwala/Fast-File-Sharer/master/screenshots/files.png" height=350 width=550/> 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Usage
+Sharing files is quite simple through Fast-File-Sharer and its really quick.
+### How to share a file?
+To share, you just have to register an account in the app and then sign in through the credentials. After successful SignIn, you can add the file you want to share and just enter the email of the receiving user and click the send button and its done.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### How to receive a file?
+Login to the app using the credentials and just click on the `Download Files` button and you will get the list of the files you have received. Click on the file you want to download and its done.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# Bugs or Requests
+If you encounter any problems feel free to open an issue. If you feel the library is  
+missing a feature, please raise a ticket on Github and I'll look into it.  
+Pull request are also welcome.
