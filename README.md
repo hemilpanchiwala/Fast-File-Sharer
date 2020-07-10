@@ -1,6 +1,10 @@
 <div align="center">
 <h1> Fast-File-Sharer</h1>
 	<img src="https://img.shields.io/badge/Platform-React.js-green" alt="Platform" />
+	<a href="https://opensource.org/licenses/MIT">  
+    <img src="https://img.shields.io/badge/License-MIT-red.svg"  
+      alt="License: MIT" />  
+  </a>  
 </div>
   
   <br />
