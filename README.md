@@ -37,4 +37,4 @@ missing a feature, please raise a ticket on Github and I'll look into it.
 Pull request are also welcome.
 
 # License
-Fast-File-Sharer is licensed under `MIT License`. View <a href="https://github.com/hemilpanchiwala/Fast-File-Sharer/blob/master/LICENSE">license</a>.
+Fast-File-Sharer is licensed under `MIT License`. View <a href="https://github.com/hemilpanchiwala/Fast-File-Sharer/blob/master/LICENSE">license</a>. 
