@@ -12,7 +12,7 @@
     "react-dropzone-styled": "^0.1.0",
     "react-filepond": "^7.0.1",
     "react-progressbar": "^15.4.1",
-    "react-scripts": "3.1.0",
+    "react-scripts": "5.0.1",
     "react-sweet-progress": "^1.1.2",
     "styled-components": "^4.3.2",
     "superagent": "^5.1.0",
